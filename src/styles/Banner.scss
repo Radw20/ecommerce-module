@@ -1,0 +1,100 @@
+.banner-section {
+    width: 100%;
+    padding: 0;
+    position: relative;
+  }
+  
+  .custom-swiper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .banner-slide {
+    height: 400px;
+    background-color: #fff; // أو اللون اللي يناسبك
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain; 
+        image-rendering: auto;
+      border-radius: 0;
+    }
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        background: rgba(200, 200, 200, 0.6); // رمادي فاتح وشفاف
+        backdrop-filter: none;
+        box-shadow: none;
+        border-radius: 12px;
+        color:#222;
+        text-align: center;
+        max-width: 90%;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);      
+        h2 {
+          font-size: 2.5rem;
+          color: #111;
+          margin-bottom: 0.5rem;
+        }
+      
+        p {
+          font-size: 1.2rem;
+          color: #333;
+        }
+      }
+      
+       //<h2>{banner.title}</h2>//
+    //<p>{banner.description}</p>//
+  }
+  
+  // arrows
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 10;
+  
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  
+  // responsive
+  @media (max-width: 768px) {
+    .custom-swiper {
+      height: 300px;
+    }
+  
+    .banner-content {
+      padding: 1rem;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .banner-heading {
+    font-size: 2.2rem;
+    text-align: center;
+   // color: #007bff;// // أزرق ملكي
+   color:#ffd700;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding: 2px;
+  }
+  

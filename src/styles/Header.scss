@@ -1,0 +1,36 @@
+.main-header {
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo a {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  
+    nav {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #ffd700;
+        }
+      }
+  
+      .cart-link {
+        font-weight: bold;
+        color: #ffd700;
+      }
+    }
+  }
+  

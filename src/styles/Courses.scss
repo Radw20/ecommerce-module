@@ -1,0 +1,135 @@
+.courses-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  overflow: hidden !important;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #222;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+
+    button {
+      padding: 10px 20px;
+      background: #eee;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s;
+
+      &.active {
+        background: #6a0dad;
+        color: white;
+      }
+
+      &:hover {
+        background: #ddd;
+      }
+    }
+  }
+
+  .courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .course-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      h3 {
+        font-size: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        margin: 0;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #6a0dad;
+        margin-top: 5px;
+      }
+
+      .course-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 10px;
+
+        .btn {
+          flex: 1;
+          text-align: center;
+          padding: 0.6rem 1rem;
+          border: none;
+          border-radius: 8px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s ease;
+          font-size: 14px;
+          text-decoration: none; // remove underline
+          white-space: nowrap;
+        }
+
+        .view-details {
+          background-color: #333;
+          color: #fff;
+
+          &:hover {
+            background-color: #111;
+          }
+        }
+
+        .course-btn {
+          background-color: #6A0DAD;
+          color: white;
+
+          &:hover {
+            background-color: #4B0082;
+          }
+
+          &.disabled {
+            background-color: #ccc;
+            color: #666;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}
